@@ -1,0 +1,73 @@
+#root {
+    text-align: center;
+    height: 100vh;
+    background: #F0F1F5;
+    color: #666;
+    overflow:auto;
+    button {
+      cursor: pointer;
+    }
+    
+}
+
+ul {
+  list-style: none;
+  padding-left:1rem;
+  width:100%;
+  li {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    line-height:1rem;
+    p {
+      text-align: left;
+      width:100%;
+      cursor:pointer;
+    }
+    button {
+      border:none;
+      margin:5px;
+    }
+  }
+}
+
+article {
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  max-width:480px;
+  margin:0 auto;
+  max-height:70vh;
+  background:#fff;
+  margin-top:2rem;
+  padding:2rem;
+  border-radius:1rem;
+
+  section {
+    display:flex;
+    justify-content:space-around;
+
+    &.todo-form {
+      input {
+        background-color:#f0f1f5;
+        width:90%;
+        border:none;
+        line-height:1.5rem;
+        text-indent:1rem;
+      }
+  
+    }
+
+    &.todo-list {
+      min-height:50vh;
+      overflow:scroll;
+      .complete {
+        text-decoration: line-through;
+      }
+    }
+
+  }
+
+  
+}
+
